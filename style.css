@@ -1,0 +1,40 @@
+*{
+
+}
+
+:root{
+    --bg-url: url(./assets/img_0240.jpg);
+    --text-color: black;
+}
+
+body {
+    background: var(--bg-url) no-repeat top center/cover;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+body{
+    font-family:"Teachers", sans-serif;
+    color: (var(--text-color));
+}
+
+#container {
+    width: 100%;
+    max-width: 360px;
+    height: 580px;
+    border: solid 2px red;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+#profile {
+    text-align: center;
+    padding: 8px;
+}
+#profile img{
+    width: 112px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}

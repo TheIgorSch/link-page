@@ -10,6 +10,11 @@
     --border-color:  rgba(255, 255, 255, 0.5);
     --highlight-color:  rgba(255, 255, 255, 0.1)
 }
+
+.dark {
+
+}
+
 body {
     background: var(--bg-url) no-repeat top center/cover;
     background-size: cover;
@@ -24,25 +29,25 @@ body{
 
 #container {
     width: 100%;
-    max-width: 360px;
-    height: 580px;
-    border: solid 2px red;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
 
 #profile {
     text-align: center;
-    padding: 8px;
+    padding: 24px;
+    margin-top: 8px;
 }
 #profile img{
     width: 112px;
     border: 2px solid var(--text-color);
     border-radius: 50%;
+
 }
 
 #profile p {
-    font-size: 18px;
+    font-size: 28px;
     font font-weight: 500;
     line-height: 24px;
     margin: auto;
@@ -60,22 +65,21 @@ ul {
     
     display: flex;
     flex-direction: column;
-    
-    
-    gap: 24px;
+    gap: 16px;
     padding: 24px 0px;
     list-style: none;
     font-weight: 600;
 }
 
 ul li a {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    font-weight: 500;
     text-decoration: none;
     color: var(--text-color);
     border: 1px solid var(--border-color);
-    padding: 4px;
+    padding: 16px 24px;
     border-radius: 6px;
     background-color: var(--surface-color);
     backdrop-filter: blur(4px);
@@ -89,5 +93,7 @@ ul li a:hover {
     border: 1.5px solid var(--border-color);
 
     background-color: var(--surface-color-hover);
-    outline: 4px solid var(--highlight-color);
+    outline: 6px solid var(--highlight-color);
 }
+
+/*social links*/

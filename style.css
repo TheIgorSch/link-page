@@ -4,22 +4,24 @@
 
 :root{
     --bg-url: url(./assets/bg-light.jpg);
+    --text-color:  rgb(0, 0, 0, 1);
+    --surface-color:  rgba(0, 0, 0, 0.05);
+    --surface-color-hover:  rgba(0, 0, 0, 0.1);
+    --border-color:  rgba(0, 0, 0, 0.5);
+    --highlight-color:  rgba(0, 0, 0, 0.1);
+    --switch-bg-url:  url(./assets/moon.svg);
+}
+
+.dark {
+    --bg-url: url(./assets/IMG_9679.jpg);
     --text-color:  rgba(255, 255, 255, 1);
     --surface-color:  rgba(255, 255, 255, 0.05);
     --surface-color-hover:  rgba(255, 255, 255, 0.1);
     --border-color:  rgba(255, 255, 255, 0.5);
     --highlight-color:  rgba(255, 255, 255, 0.2);
-    --switch-bg-url:  url(/assets/sun.svg) no-repeat center;
-}
 
-.dark {
-    --bg-url: url(./assets/IMG_0240.jpg);
-    --text-color:  rgb(84, 84, 84);
-    --surface-color:  rgba(0, 0, 0, 0.05);
-    --surface-color-hover:  rgba(0, 0, 0, 0.1);
-    --border-color:  rgba(0, 0, 0, 0.5);
-    --highlight-color:  rgba(0, 0, 0, 0.1);
-    --switch-bg-url:  url(./assets/moon.svg) no-repeat center;
+
+    --switch-bg-url:  url(./assets/sun.svg);
 
 }
 
@@ -36,7 +38,7 @@ body{
 }
 
 #container {
-    width: 100%;
+    width: 100vw;
     max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
@@ -78,7 +80,7 @@ body{
     height: 32px;
     border: 0;
     border-radius: 50%;
-    background: white  var(--switch-bg-url);
+    background: white  var(--switch-bg-url) no-repeat center;
     position: absolute;
     top: 50%;
     left: 0;
@@ -87,7 +89,9 @@ body{
 }
 
 .dark #switch button {
-    animation: slide-in 0.4s forwards;
+    right: 0;
+    left: initial;
+
 }
 
 #switch span {
